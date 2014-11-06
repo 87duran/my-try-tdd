@@ -30,10 +30,19 @@
  * @param {Object} json-api object
  * @returns {Object|Array} object or array of raw model
  */
-module.exports = function () {
-  // TODO: write tests first, then implement step-by-step
-}
 
+
+var unwrapJSON = function(json) {
+  if(!json) {
+    return false
+  } else {
+    var firstKey = Object.keys(json)[0]
+    return json[firstKey][0]
+  }
+};
+
+
+module.exports = unwrapJSON
 
 
 
