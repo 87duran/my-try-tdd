@@ -1,4 +1,4 @@
-hello-tdd
+TDD
 =========
 
-unit test exercise
+An example of building your own test for test driven development.  Uses Mocha.
